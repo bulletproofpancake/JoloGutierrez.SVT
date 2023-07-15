@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.3] - 2023-07-16
+
+### Added
+
+- Variable References for common built-in types
+
+- `Create Directory` button for `FilePathReference ` [#3](https://github.com/bulletproofpancake/SVT.Unity/pull/3)
+
+### Fixed
+
+- Missing `/` for the Resources path [#1](https://github.com/bulletproofpancake/SVT.Unity/issues/1)
+
+### Changed
+
+- Properties regarding the `FilePathReference` [#3](https://github.com/bulletproofpancake/SVT.Unity/pull/3)
+
 ## [0.0.2] - 2023-07-15
 
 ### Added
