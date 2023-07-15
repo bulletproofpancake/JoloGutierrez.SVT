@@ -26,7 +26,7 @@ namespace SVT.References
                     AssetPathType.DataPath => Application.dataPath,
                     AssetPathType.PersistentDataPath => Application.persistentDataPath,
                     AssetPathType.StreamingAssets => Application.streamingAssetsPath,
-                    AssetPathType.Resources => Application.dataPath + "Resources",
+                    AssetPathType.Resources => Application.dataPath + "/Resources",
                     _ => throw new ArgumentOutOfRangeException()
                 };
             }
