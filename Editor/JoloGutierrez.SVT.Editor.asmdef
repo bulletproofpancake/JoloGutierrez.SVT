@@ -1,0 +1,16 @@
+{
+    "name": "JoloGutierrez.SVT.Editor",
+    "rootNamespace": "SVT",
+    "references": [
+        "GUID:94ba98fd3094e7f4cade6f6161c1877b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
