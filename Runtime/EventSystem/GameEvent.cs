@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace SVT.Runtime.EventSystem
+namespace SVT.EventSystem
 {
     [CreateAssetMenu(menuName = "Events/Game Event")]
     public class GameEvent : ScriptableObject

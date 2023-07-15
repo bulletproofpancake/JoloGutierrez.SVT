@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SVT.Runtime.EventSystem
+namespace SVT.EventSystem
 {
     public class GameEventListener : MonoBehaviour
     {
