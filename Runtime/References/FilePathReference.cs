@@ -15,7 +15,29 @@ namespace SVT.References
     public class FilePathReference : ScriptableObject
     {
         [SerializeField] private AssetPathType assetPathType;
-        [SerializeField] private string directory;
+        [SerializeField] private string rootDirectory;
+        [SerializeField] private bool isRootHidden;
+        [SerializeField] private string endPoint;
+        [SerializeField] private bool isEndpointHidden;
+
+        public string RootDirectory => isRootHidden ? $"{rootDirectory}~" : rootDirectory;
+        public string EndPoint => isEndpointHidden ? $"{endPoint}~" : endPoint;
+
+        public string DirectoryPath
+        {
+            get
+            {
+                var isRootEmpty = string.IsNullOrEmpty(rootDirectory);
+                var isEndPointEmpty = string.IsNullOrEmpty(endPoint);
+                return isRootEmpty switch
+                {
+                    true when isEndPointEmpty => AssetPath,
+                    false when isEndPointEmpty => $"{AssetPath}/{RootDirectory}",
+                    true when !isEndPointEmpty => $"{AssetPath}/{EndPoint}",
+                    _ => $"{AssetPath}/{RootDirectory}/{EndPoint}/"
+                };
+            }
+        }
 
         public string AssetPath
         {
@@ -31,7 +53,5 @@ namespace SVT.References
                 };
             }
         }
-
-        public string DirectoryPath => string.IsNullOrEmpty(directory) ? $"{AssetPath}/" : $"{AssetPath}/{directory}/";
     }
 }
