@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace SVT.References.VariableReferences
 {
+    /// <summary>
+    /// Holds a value and invokes an event when it is changed.
+    /// </summary>
     public abstract class VariableReference<T> : ScriptableObject
     {
         [SerializeField] protected T _value;

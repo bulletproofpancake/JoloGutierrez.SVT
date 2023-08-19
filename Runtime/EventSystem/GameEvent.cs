@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SVT.EventSystem
 {
-    [CreateAssetMenu(menuName = "Events/Game Event")]
+    [CreateAssetMenu(menuName = "SVT/Events/Game Event")]
     public class GameEvent : ScriptableObject
     {
         private readonly List<GameEventListener> _listeners = new();
