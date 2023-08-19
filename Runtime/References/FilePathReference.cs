@@ -11,7 +11,7 @@ namespace SVT.References
         Resources
     }
 
-    [CreateAssetMenu(menuName = "References/File Path Reference")]
+    [CreateAssetMenu(menuName = "SVT/References/File Path Reference")]
     public class FilePathReference : ScriptableObject
     {
         [SerializeField] private AssetPathType assetPathType;
