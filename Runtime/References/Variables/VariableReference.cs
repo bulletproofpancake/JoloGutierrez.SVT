@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace SVT.References.VariableReferences
+namespace SVT.References.Variables
 {
     /// <summary>
     /// Holds a value and invokes an event when it is changed.

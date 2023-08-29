@@ -17,7 +17,10 @@ namespace SVT.Editor.Tools
         {
             var path = Path.Combine(Application.dataPath, root);
             foreach (var directory in folders)
+            {
                 Directory.CreateDirectory(Path.Combine(path, directory));
+                File.CreateText(Path.Combine(path, directory) + "/.gitkeep");
+            }
         }
     }
 }
